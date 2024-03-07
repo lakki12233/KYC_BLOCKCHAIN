@@ -189,16 +189,15 @@ app.post("/sendmail",function(req,res){
 		service: 'gmail',
 		auth: {
 		type: 'OAuth2',
-		  user: 'afzaldev2@gmail.com',
-		  pass: '',
-		  clientId:'',
-		  clientSecret:'',
-		  refreshToken:'1//042pvDPn_LAyLCgYIARAAGAQSNwF-L9IrsKpDN8-wdjsZspKe6sjAne1s-lk8HY19-YhaEMiLKeCoot4rN2xb6xNAzvF_trK71Bg'
-		}
+		  user: 'suman40101@gmail.com',
+		  pass: '2003suman0355',
+		  clientId:'824224562688-hbipo4iqngl9s3dg3ucfukc1b56akefs.apps.googleusercontent.com',
+		  clientSecret:'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',
+		  refreshToken:'1//04Eba9XiFh5KXCgYIARAAGAQSNwF-L9IrWrflXLFNrnJ_mx0qG3khkzYVDVoZ9Obxzu2f-ABp0CO-HfURZ7kKW23r7e3Lc2-0zjs'}
 	  });
 	  
 	  var mailOptions = {
-		from: 'afzaldev2@gmail.com',
+		from: 'suman40101@gmail.com',
 		to: req.body.email,
 		subject: 'KYC Password',
 		html: 'Dear user please find below the secret key for KYC verification: \n\n '+req.body.key+'<br><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data='+req.body.key+'"><br> Do not share this confidential information to anyone !<br>'
@@ -220,16 +219,16 @@ app.post("/alertmail",function(req,res){
 		service :'gmail',
 		auth: {
 			type: 'OAuth2',
-			  user: 'afzaldev2@gmail.com',
-			  pass: '',
-			  clientId:'',
-			  clientSecret:'',
-			  refreshToken:'1//042pvDPn_LAyLCgYIARAAGAQSNwF-L9IrsKpDN8-wdjsZspKe6sjAne1s-lk8HY19-YhaEMiLKeCoot4rN2xb6xNAzvF_trK71Bg'
+			  user: 'suman40101@gmail.com',
+			  pass: '2003suman0355',
+			  clientId:'824224562688-hbipo4iqngl9s3dg3ucfukc1b56akefs.apps.googleusercontent.com',
+			  clientSecret:'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',
+			  refreshToken: '1//04Eba9XiFh5KXCgYIARAAGAQSNwF-L9IrWrflXLFNrnJ_mx0qG3khkzYVDVoZ9Obxzu2f-ABp0CO-HfURZ7kKW23r7e3Lc2-0zjs'
 			}
 	  });
-	  
+	   
 	  var mailOptions = {
-		from: 'afzaldev2@gmail.com',
+		from: 'suman40101@gmail.com',
 		to: req.body.email,
 		subject: 'KYC Access alert',
 		text: "Dear customer , \n\t Your KYC Data was accessed recently by "+req.body.oname+" at "+req.body.time+"\n If this activity is unusual please contact your nearest KYC organization for key change"
